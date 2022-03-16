@@ -235,6 +235,17 @@ public class hazifeladat0316 {
         }
         System.out.println("A legnagyobb közös osztó: "+ z);
      */
+
+        int number = -5483229;
+        int sum = 0;
+
+        do {
+            sum += number % 10;
+            number /=10;
+        } while(number != 0);
+
+        System.out.println(sum);
     }
+
 }
 
