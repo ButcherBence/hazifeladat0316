@@ -236,7 +236,9 @@ public class hazifeladat0316 {
         System.out.println("A legnagyobb közös osztó: "+ z);
      */
 
-        int number = -5483229;
+        //Gyakorló 3* 1. feladat
+
+/*        int number = -5483229;
         int sum = 0;
 
         do {
@@ -244,8 +246,62 @@ public class hazifeladat0316 {
             number /=10;
         } while(number != 0);
 
-        System.out.println(sum);
+        System.out.println(sum);*/
+
+        //Gyakorló 3* 2. feladat
+
+        /*int base = 5, exponent = 3;
+        int result = base;
+        for (int i = 1; i < exponent ; i++){
+            result *= base;
+        }
+        System.out.println(base);*/
+
+        //Gyakorló 3* 3. feladat
+
+        /*int[] numbers = {-104, -442, -422, -66, -333, -103, -89, -66, -501, -316, -114};
+        int minimum = numbers[0];
+        for (int i = 0;i < numbers.length-1; i++){
+            if (numbers[i]<minimum){
+                minimum=numbers[i];
+            }
+        }
+        System.out.println(minimum);*/
+
+        //Gyakorló 3* 4. feladat
+
+        /*int[] numbers = {-104, -442, -422, -66, -333, -103, -89, -66, -501, -316, -114};
+        int maximum = numbers[0];
+        for (int i = 0;i < numbers.length-1; i++){
+            if (numbers[i]>maximum){
+                maximum=numbers[i];
+            }
+        }
+        System.out.println(maximum);*/
+
+        //Gyakorló 3* 5. feladat
+
+        /*int[] numbers = {-2, 1, -6, 10};
+        String[] szamok = new String[numbers.length];
+        for (int i = 0; i < numbers.length;i++){
+            szamok[i] = Integer.toString(numbers[i]);
+        }
+        System.out.println(Arrays.toString(szamok));*/
+
+        //Gyakorló 3* 6. feladat.
+
+        int[] numbers = {1, 2, 2, 3, 4, 5, 5, 4, 3, 2, 2, 1};
+        int tukor = 0;
+        for (int i = 1; i <=numbers.length;i++){
+            if (numbers[i-1] == numbers[numbers.length-i]){
+                tukor++;
+            }
+        }
+        if (tukor == numbers.length){
+            System.out.println("Tükörtömb");
+        }else{
+            System.out.println("Nem tükör");
+        }
     }
 
 }
-
